@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Búsqueda avanzada | Gestión Culinaria</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    
+    <div class="logo">
+      <img src="Logo.png" alt="Logo de sombrero de chef color blanco">
+      <p>Gestión Culinaria</p>
+    </div>
+  
+  </header>
+
+  <div class="pagina">
+    <nav>
+      <h2>Menú principal</h2><a href="dashboard.html">Dashboard Chef</a>
+      <a href="cargar-receta.html">Cargar receta</a>
+      <a href="validar-recetas.html">Validar recetas</a>
+      <a href="busqueda.html">Búsqueda</a>
+      <a href="planificador.html">Planificador</a>
+      <a href="index.html">Salir</a>
+      
+      <div class="perfil">
+        <a href="index.html">
+          <img src="Perfil.png" alt="Icono de perfil color celeste">
+        </a>
+          <a href="index.html">Perfil</a>
+      </div>
+
+    </nav>
+
+    
+
+
+  <main>
+    <section>
+      <h1>Búsqueda avanzada</h1>
+      <form action="busqueda.html" method="get">
+        <div class="campo">
+          <label for="ingredientes">Ingredientes disponibles</label>
+          <input type="text" id="ingredientes" name="ingredientes" placeholder="arroz, frijoles, pollo">
+        </div>
+        <div class="campo">
+          <label for="tipo">Clasificación</label>
+          <select id="tipo" name="tipo">
+            <option>Todas</option>
+            <option>Oriental</option>
+            <option>Costarricense</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="dificultad">Dificultad</label>
+          <select id="dificultad" name="dificultad">
+            <option>Todas</option>
+            <option>Fácil</option>
+            <option>Intermedia</option>
+            <option>Difícil</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="max">Presupuesto máximo por porción (₡)</label>
+          <input type="number" id="max" name="max" min="0">
+        </div>
+        <button type="submit" class="btn">Buscar</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Resultados</h2>
+      <div>
+        <div class="tarjeta">
+          <h3>Gallo pinto especial</h3>
+          <span class="etiqueta">Desayuno</span>
+          <p>Presupuesto: ₡1 200 por porción</p>
+          <p>Calificación: 4.9 de 5</p>
+          <button type="button" class="btn">Guardar</button>
+        </div>
+        <div class="tarjeta">
+          <h3>Arroz con pollo</h3>
+          <span class="etiqueta">Almuerzo</span>
+          <p>Presupuesto: ₡2 500 por porción</p>
+          <p>Calificación: 4.6 de 5</p>
+          <button type="button" class="btn">Guardar</button>
+        </div>
+        <div class="tarjeta">
+          <h3>Casado vegetariano</h3>
+          <span class="etiqueta">Almuerzo</span>
+          <p>Presupuesto: ₡2 000 por porción</p>
+          <p>Calificación: 4.7 de 5</p>
+          <button type="button" class="btn">Guardar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  </div>
+
+  <footer>
+    <p>Gestión Culinaria · Proyecto SOFT-06 · CENFOTEC</p>
+    <p>GestionCulinaria_25 · GestionCulinariacr · 8888-9663</p>
+  </footer>
+</body>
+</html>

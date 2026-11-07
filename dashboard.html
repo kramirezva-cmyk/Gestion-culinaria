@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Chef | Gestión Culinaria</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    
+    <div class="logo">
+      <img src="Logo.png" alt="Logo de sombrero de chef color blanco">
+      <p>Gestión Culinaria</p>
+    </div>
+  
+  </header>
+
+  <div class="pagina">
+    <nav>
+      <h2>Menú principal</h2><a href="dashboard.html">Dashboard Chef</a>
+      <a href="cargar-receta.html">Cargar receta</a>
+      <a href="validar-recetas.html">Validar recetas</a>
+      <a href="busqueda.html">Búsqueda</a>
+      <a href="planificador.html">Planificador</a>
+      <a href="index.html">Salir</a>
+
+      <div class="perfil">
+        <a href="index.html">
+          <img src="Perfil.png" alt="Icono de perfil color celeste">
+        </a>
+          <a href="index.html">Perfil</a>
+      </div>
+      
+    </nav>
+
+  <main>
+    <section>
+      <h1>¡Bienvenido, chef!</h1>
+      <p>Desde aquí podés administrar tus recetas y planificar las comidas.</p>
+      <p><a class="btn" href="cargar-receta.html">Nueva receta</a></p>
+      <div>
+        <div class="tarjeta"><p class="numero">12</p><p>Recetas publicadas</p></div>
+        <div class="tarjeta"><p class="numero">3</p><p>Recetas por validar</p></div>
+        <div class="tarjeta"><p class="numero">248</p><p>Seguidores</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tus recetas recientes</h2>
+      <div class="tarjeta">
+        <h3>Takoyaki</h3>
+        <p>Estado: publicada</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Rice and beans</h3>
+        <p>Estado: en revisión</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Ranking de recetas</h2>
+      <div>
+        <table>
+            <tr><th>Receta</th><th>Chef</th><th>Valoración</th></tr>
+            <tr><td>Gallo pinto especial</td><td>Chef Marta</td><td>4.9</td></tr>
+            <tr><td>Casado vegetariano</td><td>Chef Luis</td><td>4.7</td></tr>
+            <tr><td>Arroz con pollo</td><td>Chef Ana</td><td>4.6</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Eventos y retos del mes</h2>
+      <div>
+        <div class="tarjeta">
+          <h3>Reto: cocina con 5 ingredientes</h3>
+          <p>Crea una receta con solo 5 ingredientes.</p>
+          <a class="btn" href="cargar-receta.html">Participar</a>
+        </div>
+        <div class="tarjeta">
+          <h3>Feria culinaria</h3>
+          <p>Evento virtual para compartir recetas.</p>
+          <span class="etiqueta">15 de noviembre</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  </div>
+
+  <footer>
+    <p>Gestión Culinaria · Proyecto SOFT-06 · CENFOTEC</p>
+    <p>GestionCulinaria_25 · GestionCulinariacr · 8888-9663</p>
+  </footer>
+</body>
+</html>

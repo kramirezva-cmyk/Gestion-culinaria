@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de sesión | Gestión Culinaria</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    
+    <div class="logo">
+      <img src="Logo.png" alt="Logo de sombrero de chef color blanco">
+      <p>Gestión Culinaria</p>
+    </div>
+  
+  </header>
+
+  <main class="inicio">
+    <section>
+      <h1>Iniciar sesión</h1>
+      <form action="dashboard.html" method="get">
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" required>
+        </div>
+        <div class="campo">
+          <label for="clave">Contraseña</label>
+          <input type="password" id="clave" name="clave" required>
+        </div>
+        <div class="campo">
+          <label for="tipo">Tipo de usuario</label>
+          <select id="tipo" name="tipo">
+            <option>Chef experto</option>
+            <option>Usuario regular</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Ingresar</button>
+      </form>
+      <p>Si eres usuario regular, puedes ir directo a la <a href="busqueda.html">búsqueda de recetas</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Gestión Culinaria · Proyecto SOFT-06 · CENFOTEC</p>
+    <p>GestionCulinaria_25 · GestionCulinariacr · 8888-9663</p>
+  </footer>
+</body>
+</html>
